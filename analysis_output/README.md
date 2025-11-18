@@ -89,14 +89,12 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
 | words comp ratio                        | Compression or expansion ratio | $\frac{\mathbf{W} {\mathrm{simplified}}}{\mathbf{W} {\mathrm{source}}}$                                                                        |
 | vocab match                              | Terms (lemmatized)             | $\mathrm{Jaccard} ( \mathbf{T} {\mathrm{simplified}} ,   \mathbf{T} {\mathrm{source}} )$                                                       |
 | Toxicity                                  | Content safety                 | Roberta-hate-speech-dynabench-r4                                                                                                               |
-
 |**Discourse fidelity/Accuracy**|  | | 
 | Semantic Similarity                       | QWen2.5 32B Embeddings         | $\cos ( \mathbf{Doc} {\mathrm{simplified}}, \mathbf{Doc} {\mathrm{source}} )$                                                                  |
 | BERTScore~\cite{zhangbertscore2020}       | N-gram-based                   | F1 score value. (Roberta Large)                                                                                                                |
 | ROUGE-L~\cite{linrouge2004}               | N-gram-based                   | Longest common subsequence. With stemming.                                                                                                     |
 | SacreBLEU~\cite{postcall2018}             | N-gram-based                   | Defaults                                                                                                                                       |
 | LDATopics                                 | Terms                          | $\mathrm{Jaccard} ( \mathbf{T} {\mathrm{simplified}} ,   \mathbf{T} {\mathrm{source}} )$                                                       |
-
 |**Simplification and readability**| | | 
 | SARI~\cite{xuoptimizing2016}              | System goodness, n-gram based  | $ \frac{ \mathbf{F1} {add}  + \mathbf{F1} {keep} + \mathbf{Pr} {del} } { 3 }$ ;  $\mathbf{F1}$ score, $\mathbf{Pr}$ecision score               |
 | SMOG~\cite{smog}                          | USA School Grade               | $1.0430  *   \sqrt{  (\sum {w} \mathbb{I}(\mathbf{P} \ge 3)  * \frac{30}{\mathbf{S}}   }  )  + 3.1291  $                                       |
