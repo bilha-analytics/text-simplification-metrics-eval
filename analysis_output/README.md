@@ -1,10 +1,9 @@
 ---
 title: 'On Text Simplification Metrics and General-purpose LLMs for Accessible Health Information, and A Potential Architectural Advantage of The Instruction-tuned LLM Class'
-tags:
-    - Python
-    - NLP
-    - Lay simplification
-    - Text simplification metrics
+tags: 
+    - NLP 
+    - Text simplification
+    - Metrics correlation
     - LLMs
 authors:
     - name: 
@@ -26,10 +25,8 @@ date: Nov 2025
 
 
 **[Publication associated with this entry](https://arxiv.org/abs/2511.05080)**
-
-*Title:* On Text Simplification Metrics and General-Purpose LLMs for Accessible Health Information, and A Potential Architectural Advantage of The Instruction-Tuned LLM class
-
-**How to cite:**
+*Title:* On Text Simplification Metrics and General-Purpose LLMs for Accessible Health Information, and A Potential Architectural 
+*How to cite:*
 ```bibtex
 @article{githinji2025textsimplificationmetricsgeneralpurpose,
       title={On Text Simplification Metrics and General-Purpose LLMs for Accessible Health Information, and A Potential Architectural Advantage of The Instruction-Tuned LLM class}, 
