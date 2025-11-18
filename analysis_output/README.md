@@ -4,13 +4,7 @@ tags:
     - NLP 
     - Text simplification
     - Metrics correlation
-    - LLMs
-authors:
-    - name: 
-        given-names: P. Bilha 
-        surname: Githinji
-      orcid: 0009-0000-2080-4979  
-    - name: et. al.  
+    - LLMs  
 date: Nov 2025 
 ---
 # Summary
