@@ -84,7 +84,7 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
 | n sentences                              |                                | $\mathbf{S}$                                                                                                                                   |
 | n syllables in word                    |                                | $\mathbf{P}$  ;   Typically polysyllabic if $ \mathbf{P}\ge 3$                                                                                 |
 | avg words per sent                     |                                | $\mathbf{L} = \frac{ \mathbf{W} }{ \mathbf{S} }$                                                                                               |
-| difficult words                          |                                | $  \mathbf{V} = \frac{ \sum \mathbb{I}( ( w \notin \mathrm{DaleChallList}) |  (\mathbf{P} \ge 3))  }{ \mathbf{W} }  * 100$                     |
+| difficult words                          |                                | $\mathbf{V} = \frac{ \sum \mathbb{I}( ( w \notin \mathrm{DaleChallList}) |  (\mathbf{P} \ge 3))  }{ \mathbf{W} }  * 100$                     |
 | sentences comp ratio                    | Compression or expansion ratio | $\frac{\mathbf{S} {\mathrm{simplified}}}{\mathbf{S} {\mathrm{source}}}$                                                                        |
 | words comp ratio                        | Compression or expansion ratio | $\frac{\mathbf{W} {\mathrm{simplified}}}{\mathbf{W} {\mathrm{source}}}$                                                                        |
 | vocab match                              | Terms (lemmatized)             | $\mathrm{Jaccard} ( \mathbf{T} {\mathrm{simplified}} ,   \mathbf{T} {\mathrm{source}} )$                                                       |
@@ -96,14 +96,14 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
 | SacreBLEU~\cite{postcall2018}             | N-gram-based                   | Defaults                                                                                                                                       |
 | LDATopics                                 | Terms                          | $\mathrm{Jaccard} ( \mathbf{T} {\mathrm{simplified}} ,   \mathbf{T} {\mathrm{source}} )$                                                       |
 |**3. Simplification and readability**| | | 
-| SARI~\cite{xuoptimizing2016}              | System goodness, n-gram based  | $ \frac{ \mathbf{F1} {add}  + \mathbf{F1} {keep} + \mathbf{Pr} {del} } { 3 }$ ;  $\mathbf{F1}$ score, $\mathbf{Pr}$ecision score               |
-| SMOG~\cite{smog}                          | USA School Grade               | $1.0430  *   \sqrt{  (\sum {w} \mathbb{I}(\mathbf{P} \ge 3)  * \frac{30}{\mathbf{S}}   }  )  + 3.1291  $                                       |
+| SARI~\cite{xuoptimizing2016}              | System goodness, n-gram based  | $\frac{ \mathbf{F1} {add}  + \mathbf{F1} {keep} + \mathbf{Pr} {del} } { 3 }$ ;  $\mathbf{F1}$ score, $\mathbf{Pr}$ecision score               |
+| SMOG~\cite{smog}                          | USA School Grade               | $1.0430  *   \sqrt{  (\sum {w} \mathbb{I}(\mathbf{P} \ge 3)  * \frac{30}{\mathbf{S}}   }  )  + 3.1291$                                       |
 | Gunning Fog~\cite{gunningtechniquenodate} | USA School Grade               | $0.4 * (  \mathbf{V}   +    \mathbf{L}  )$                                                                                                     |
-| ARI~\cite{smithautomated1967}             | USA School Grade               | $ (4.71 * \frac{\mathrm{nCharacters}}{\mathbf{W}}) +  (0.5 * \mathbf{L})  - 21.43$                                                             |
-| Dale-Chall                                | USA School Grade               | $ (0.1579 * \frac{  \sum \mathbb{I}( w \notin \mathrm{DaleChallList})    }{\mathbf{W}} * 100)   +  (0.0496 * \mathbf{L})  \space [+ 3.6365 ] $ |
-| FKGL~\cite{kincaidelectronic1988}         | USA School Grade               | $-15.59  +  (11.8 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}})    + (0.39 *  \mathbf{L})   $                                                     |
-| Flesch Ease~\cite{klareautomation1969}    |                                | $206.835 - (84.6 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}} )   - (1.015 *  \mathbf{L} )  $                                                     |
-| New Dale-Chall                           | For context                    | $ (0.1579 * \mathbf{V})   +  (0.0496 * \mathbf{L})  \space [+ 3.6365 ] $                                                                       |
+| ARI~\cite{smithautomated1967}             | USA School Grade               | $(4.71 * \frac{\mathrm{nCharacters}}{\mathbf{W}}) +  (0.5 * \mathbf{L})  - 21.43$                                                             |
+| Dale-Chall                                | USA School Grade               | $(0.1579 * \frac{  \sum \mathbb{I}( w \notin \mathrm{DaleChallList})    }{\mathbf{W}} * 100)   +  (0.0496 * \mathbf{L})  \space [+ 3.6365 ]$ |
+| FKGL~\cite{kincaidelectronic1988}         | USA School Grade               | $-15.59  +  (11.8 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}})    + (0.39 *  \mathbf{L})$                                                     |
+| Flesch Ease~\cite{klareautomation1969}    |                                | $206.835 - (84.6 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}} )   - (1.015 *  \mathbf{L} )$                                                     |
+| New Dale-Chall                           | For context                    | $(0.1579 * \mathbf{V})   +  (0.0496 * \mathbf{L})  \space [+ 3.6365 ] $                                                                       |
 
 
 
