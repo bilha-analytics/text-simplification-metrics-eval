@@ -75,7 +75,7 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
  
 
 ## Metrics in the analysis 
-| A. Foundational/supplementary metrics     |                                | Computation notes                                                                                                                              |
+| Metric     |                                | Computation notes                                                                                                                              |
 |-------------------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | n words                                  |                                | $\mathbf{W}$                                                                                                                                   |
 | n sentences                              |                                | $\mathbf{S}$                                                                                                                                   |
