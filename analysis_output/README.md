@@ -36,7 +36,10 @@ date: Nov 2025
 }
 ```
 
-
+[[![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg)](https://arxiv.org/abs/2511.05080)] 
+[![Custom Badge](https://img.shields.io/badge/Text-Simplification-blue)]
+[![Research](https://img.shields.io/badge/Research-NLP-orange)]
+[![LLM](https://img.shields.io/badge/LLM-GPT--4-green)]
 
 # Records
 This GitHub repository hosts the analytical outputs from our study. Table 1 below lists the collection of CSV files. These data files support the findings discussed in our research and provide resources for reference. 
