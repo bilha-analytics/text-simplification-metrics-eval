@@ -41,7 +41,7 @@ date: Nov 2025
 # Records
 This GitHub repository hosts the analytical outputs from our study. Table 1 below lists the collection of CSV files. These data files support the findings discussed in our research and provide resources for reference. 
 
-**Table 1: CSVs with analysis output**
+**Table 1: Overview of the CSVs with analysis output**
 | File name                      | Description                             |   $n$ rows | Columns                                                                                                                                          |
 |:-------------------------------|:----------------------------------------|:-----------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | human_benchmark_thresholds.csv | Mean scores for human benchmark.        |               22 | Model Name, Metric Name, mean, se, ci (.95)                                                                                                      |
