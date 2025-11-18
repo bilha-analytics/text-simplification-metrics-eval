@@ -9,10 +9,10 @@ date: Nov 2025
 ---
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg)](https://arxiv.org/abs/2511.05080)
+[![arXiv](https://img.shields.io/badge/arXiv-2511.05080-b31b1b.svg)](https://arxiv.org/abs/2511.05080)
 ![Custom Badge](https://img.shields.io/badge/Text-Simplification-blue)
 ![Research](https://img.shields.io/badge/Research-NLP-orange)
-![LLM](https://img.shields.io/badge/LLM-GPT--4-green)
+![LLM](https://img.shields.io/badge/LLMs-green)
 
 
 # Summary
