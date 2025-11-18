@@ -1,12 +1,4 @@
----
-title: 'On Text Simplification Metrics and General-purpose LLMs for Accessible Health Information, and A Potential Architectural Advantage of The Instruction-tuned LLM Class'
-tags:
-    - Python
-    - NLP
-    - Text simplification
-    - Metrics correlation
-    - LLMs  
-date: Nov 2025 
+--- 
 ---
 # Summary
  
