@@ -1,0 +1,110 @@
+Model Name,Metric Name,mean,se,ci (.95)
+All-models,avg_words_per_sent,20.36,0.1,20.16 - 20.56
+All-models,ARI,13.64,0.1,13.44 - 13.84
+All-models,sem_sim,0.66,0.0,0.66 - 0.66
+All-models,sentences_comp_ratio,1.06,0.01,1.05 - 1.08
+All-models,words_comp_ratio,0.84,0.01,0.83 - 0.85
+All-models,exact_match,0.0,0.0,0.00 - 0.00
+All-models,avg_words_comp_ratio,0.81,0.0,0.80 - 0.81
+All-models,LDATopics,0.3,0.01,0.29 - 0.32
+All-models,SacreBLEU,21.0,0.54,19.94 - 22.05
+All-models,BERTScore,0.9,0.0,0.90 - 0.90
+All-models,n_sentences,11.71,0.13,11.45 - 11.97
+All-models,SMOG,13.3,0.07,13.16 - 13.43
+All-models,difficult_words,49.86,0.8,48.29 - 51.42
+All-models,ROUGE-L,0.46,0.01,0.45 - 0.47
+All-models,vocab_match,0.55,0.0,0.54 - 0.55
+All-models,FKGL,11.69,0.06,11.57 - 11.81
+All-models,Flesch Ease,42.67,0.31,42.06 - 43.27
+All-models,Dale-Chall,12.35,0.03,12.29 - 12.42
+All-models,n_words,236.33,2.8,230.84 - 241.82
+All-models,Gunning Fog,13.8,0.09,13.63 - 13.97
+All-models,Toxicity,0.0,0.0,-0.00 - 0.00
+Mistralsmall-flexi,avg_words_per_sent,23.39,0.06,23.26 - 23.52
+Mistralsmall-flexi,ARI,14.5,0.04,14.42 - 14.58
+Mistralsmall-flexi,sem_sim,0.86,0.0,0.85 - 0.86
+Mistralsmall-flexi,sentences_comp_ratio,1.18,0.0,1.17 - 1.19
+Mistralsmall-flexi,words_comp_ratio,1.09,0.0,1.08 - 1.09
+Mistralsmall-flexi,exact_match,0.0,0.0,-0.00 - 0.00
+Mistralsmall-flexi,avg_words_comp_ratio,0.95,0.0,0.94 - 0.95
+Mistralsmall-flexi,LDATopics,0.37,0.0,0.37 - 0.38
+Mistralsmall-flexi,SacreBLEU,34.99,0.27,34.46 - 35.52
+Mistralsmall-flexi,BERTScore,0.91,0.0,0.91 - 0.91
+Mistralsmall-flexi,n_sentences,13.07,0.07,12.93 - 13.21
+Mistralsmall-flexi,SMOG,14.18,0.03,14.12 - 14.23
+Mistralsmall-flexi,difficult_words,60.55,0.34,59.89 - 61.21
+Mistralsmall-flexi,ROUGE-L,0.57,0.0,0.56 - 0.57
+Mistralsmall-flexi,vocab_match,0.58,0.0,0.58 - 0.58
+Mistralsmall-flexi,FKGL,12.7,0.03,12.65 - 12.75
+Mistralsmall-flexi,Flesch Ease,39.77,0.15,39.48 - 40.06
+Mistralsmall-flexi,Dale-Chall,9.4,0.02,9.37 - 9.43
+Mistralsmall-flexi,n_words,295.84,1.55,292.80 - 298.87
+Mistralsmall-flexi,Gunning Fog,12.95,0.04,12.87 - 13.04
+Mistralsmall-flexi,Toxicity,0.0,0.0,0.00 - 0.00
+Mistralsmall-flexi,Semantic Similarity,0.9,0.0,0.90 - 0.90
+Mistralsmall-strict,avg_words_per_sent,23.39,0.06,23.26 - 23.52
+Mistralsmall-strict,ARI,14.5,0.04,14.42 - 14.58
+Mistralsmall-strict,sem_sim,0.86,0.0,0.85 - 0.86
+Mistralsmall-strict,sentences_comp_ratio,1.18,0.0,1.17 - 1.19
+Mistralsmall-strict,words_comp_ratio,1.09,0.0,1.08 - 1.09
+Mistralsmall-strict,exact_match,0.0,0.0,0.00 - 0.00
+Mistralsmall-strict,avg_words_comp_ratio,0.95,0.0,0.94 - 0.95
+Mistralsmall-strict,LDATopics,0.37,0.0,0.37 - 0.38
+Mistralsmall-strict,SacreBLEU,34.99,0.27,34.46 - 35.53
+Mistralsmall-strict,BERTScore,0.91,0.0,0.91 - 0.91
+Mistralsmall-strict,n_sentences,13.07,0.07,12.93 - 13.21
+Mistralsmall-strict,SMOG,14.18,0.03,14.12 - 14.23
+Mistralsmall-strict,difficult_words,60.55,0.34,59.89 - 61.21
+Mistralsmall-strict,ROUGE-L,0.57,0.0,0.56 - 0.57
+Mistralsmall-strict,vocab_match,0.58,0.0,0.58 - 0.58
+Mistralsmall-strict,FKGL,12.7,0.03,12.65 - 12.75
+Mistralsmall-strict,Flesch Ease,39.77,0.15,39.48 - 40.06
+Mistralsmall-strict,Dale-Chall,9.4,0.02,9.36 - 9.43
+Mistralsmall-strict,n_words,295.84,1.56,292.77 - 298.90
+Mistralsmall-strict,Gunning Fog,12.95,0.04,12.87 - 13.04
+Mistralsmall-strict,Toxicity,0.0,0.0,0.00 - 0.00
+Mistralsmall-strict,Semantic Similarity,0.9,0.0,0.90 - 0.90
+Qwen-strict,avg_words_per_sent,23.39,0.07,23.25 - 23.52
+Qwen-strict,ARI,14.5,0.04,14.42 - 14.58
+Qwen-strict,sem_sim,0.86,0.0,0.85 - 0.86
+Qwen-strict,sentences_comp_ratio,1.18,0.0,1.17 - 1.18
+Qwen-strict,words_comp_ratio,1.09,0.0,1.08 - 1.09
+Qwen-strict,exact_match,0.0,0.0,0.00 - 0.00
+Qwen-strict,avg_words_comp_ratio,0.95,0.0,0.94 - 0.96
+Qwen-strict,LDATopics,0.37,0.0,0.37 - 0.38
+Qwen-strict,SacreBLEU,34.99,0.12,34.75 - 35.23
+Qwen-strict,BERTScore,0.91,0.0,0.91 - 0.91
+Qwen-strict,n_sentences,13.07,0.13,12.81 - 13.33
+Qwen-strict,SMOG,14.18,0.03,14.11 - 14.24
+Qwen-strict,difficult_words,60.55,0.36,59.84 - 61.26
+Qwen-strict,ROUGE-L,0.57,0.0,0.56 - 0.57
+Qwen-strict,vocab_match,0.58,0.0,0.58 - 0.58
+Qwen-strict,FKGL,12.7,0.02,12.65 - 12.75
+Qwen-strict,Flesch Ease,39.77,0.14,39.49 - 40.05
+Qwen-strict,Dale-Chall,9.4,0.02,9.36 - 9.44
+Qwen-strict,n_words,295.84,2.58,290.78 - 300.89
+Qwen-strict,Gunning Fog,12.95,0.04,12.87 - 13.04
+Qwen-strict,Toxicity,0.0,0.0,0.00 - 0.00
+Qwen-strict,Semantic Similarity,0.9,0.0,0.90 - 0.90
+Qwen-flexi,avg_words_per_sent,23.39,0.06,23.27 - 23.51
+Qwen-flexi,ARI,14.5,0.04,14.43 - 14.57
+Qwen-flexi,sem_sim,0.86,0.0,0.85 - 0.86
+Qwen-flexi,sentences_comp_ratio,1.18,0.0,1.17 - 1.18
+Qwen-flexi,words_comp_ratio,1.09,0.0,1.08 - 1.09
+Qwen-flexi,exact_match,0.0,0.0,0.00 - 0.00
+Qwen-flexi,avg_words_comp_ratio,0.95,0.0,0.94 - 0.96
+Qwen-flexi,LDATopics,0.37,0.0,0.37 - 0.38
+Qwen-flexi,SacreBLEU,34.99,0.11,34.78 - 35.21
+Qwen-flexi,BERTScore,0.91,0.0,0.91 - 0.91
+Qwen-flexi,n_sentences,13.07,0.07,12.93 - 13.20
+Qwen-flexi,SMOG,14.18,0.03,14.12 - 14.23
+Qwen-flexi,difficult_words,60.55,0.27,60.02 - 61.08
+Qwen-flexi,ROUGE-L,0.57,0.0,0.56 - 0.57
+Qwen-flexi,vocab_match,0.58,0.0,0.58 - 0.58
+Qwen-flexi,FKGL,12.7,0.03,12.64 - 12.76
+Qwen-flexi,Flesch Ease,39.77,0.17,39.43 - 40.11
+Qwen-flexi,Dale-Chall,9.4,0.02,9.37 - 9.43
+Qwen-flexi,n_words,295.84,1.31,293.27 - 298.40
+Qwen-flexi,Gunning Fog,12.95,0.04,12.88 - 13.03
+Qwen-flexi,Toxicity,0.0,0.0,0.00 - 0.00
+Qwen-flexi,Semantic Similarity,0.9,0.0,0.90 - 0.90
