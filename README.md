@@ -1,5 +1,6 @@
 ![Research](https://img.shields.io/badge/Research-NLP-orange)
 ![LLM](https://img.shields.io/badge/LLMs-green) 
+![Metrics](https://img.shields.io/badge/Metrics-green) 
 [![OutputPage](https://img.shields.io/badge/Analysis-Output-blue)](https://github.com/bilha-analytics/text-simplification-metrics-eval/tree/main/analysis_output)
 
 # Summary
