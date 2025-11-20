@@ -1,13 +1,21 @@
---- 
----
+![Research](https://img.shields.io/badge/Research-NLP-orange)
+![LLM](https://img.shields.io/badge/LLMs-green) 
+![Metrics](https://img.shields.io/badge/Metrics-green) 
+[![OutputPage](https://img.shields.io/badge/Analysis-Output-blue)](https://github.com/bilha-analytics/text-simplification-metrics-eval/tree/main/analysis_output)
+
 # Summary
- 
+
+
+### Pages
+- **[Analysis Output: Readability and accuracy metrics, Instruction-tuned Mistral-small 24B Vs Reasoning-augmented QWen2.5 32B](https://github.com/bilha-analytics/text-simplification-metrics-eval/tree/main/analysis_output)**
 
 
 
-## Associated Publications 
 
-**[Text simplification and LLMs - Instruction-tuned Mistral offers better performance and is comparable to human experts](https://arxiv.org/abs/2511.05080)**
+
+### Associated Publications 
+
+- **[Text simplification and LLMs - Instruction-tuned Mistral offers better performance and is comparable to human experts](https://arxiv.org/abs/2511.05080)**
 
 *Title:* On Text Simplification Metrics and General-Purpose LLMs for Accessible Health Information, and A Potential Architectural
 
