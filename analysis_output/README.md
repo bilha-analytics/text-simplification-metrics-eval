@@ -108,8 +108,6 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
 | Dale-Chall                                | USA School Grade               | $(0.1579 * \frac{  \sum \mathbb{I}( w \notin \mathrm{DaleChallList})    }{\mathbf{W}} * 100)   +  (0.0496 * \mathbf{L})  \space [+ 3.6365 ]$ |
 | FKGL~\cite{kincaidelectronic1988}         | USA School Grade               | $-15.59  +  (11.8 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}})    + (0.39 *  \mathbf{L})$                                                     |
 | Flesch Ease~\cite{klareautomation1969}    |                                | $206.835 - (84.6 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}} )   - (1.015 *  \mathbf{L} )$                                                     |
-| New Dale-Chall                           | For context                    | $(0.1579 * \mathbf{V})   +  (0.0496 * \mathbf{L})  \space [+ 3.6365 ] $                                                                       |
-
 
 
 ## Additional plots
