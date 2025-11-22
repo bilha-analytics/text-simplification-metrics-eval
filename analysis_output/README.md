@@ -1,5 +1,5 @@
 ---
-title: 'On Text Simplification Metrics and General-purpose LLMs for Accessible Health Information, and A Potential Architectural Advantage of The Instruction-tuned LLM Class'
+title: 'An Architectural Advantage of The Instruction-Tuned LLM in Containing The Readability-Accuracy Tension in Text Simplification'
 tags: 
     - NLP 
     - Text simplification
@@ -9,7 +9,7 @@ date: Nov 2025
 ---
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2511.05080-b31b1b.svg)](https://arxiv.org/abs/2511.05080)
+[![arXiv](https://img.shields.io/badge/arXiv-2511.05080-b31b1b.svg)](https://arxiv.org/abs/2511.05080v2)
 ![Custom Badge](https://img.shields.io/badge/Text-Simplification-blue)
 ![Research](https://img.shields.io/badge/Research-NLP-orange)
 ![LLM](https://img.shields.io/badge/LLMs-green)
@@ -28,19 +28,19 @@ date: Nov 2025
 
 **[Publication associated with this entry](https://arxiv.org/abs/2511.05080)**
 
-*Title:* On Text Simplification Metrics and General-Purpose LLMs for Accessible Health Information, and A Potential Architectural 
+*Title:* An Architectural Advantage of The Instruction-Tuned LLM in Containing The Readability-Accuracy Tension in Text Simplification
 
 *How to cite:*
 
 ```bibtex
 @article{githinji2025textsimplificationmetricsgeneralpurpose,
-      title={On Text Simplification Metrics and General-Purpose LLMs for Accessible Health Information, and A Potential Architectural Advantage of The Instruction-Tuned LLM class}, 
-      author={P. Bilha Githinji and Aikaterini Meilliou and Peiwu Qin},
+      title={An Architectural Advantage of The Instruction-Tuned LLM in Containing The Readability-Accuracy Tension in Text Simplification}, 
+      author={P. Bilha Githinji and Aikaterini Meilliou and Zeming Liang and Lian Zhang and Peiwu Qin},
       year={2025},
       eprint={2511.05080},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2511.05080}, 
+      url={https://arxiv.org/abs/2511.05080v2}, 
 }
 ```
 # Records

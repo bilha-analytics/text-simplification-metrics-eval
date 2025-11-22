@@ -17,7 +17,7 @@
 
 - **[Text simplification and LLMs - Instruction-tuned Mistral offers better performance and is comparable to human experts](https://arxiv.org/abs/2511.05080)**
 
-*Title:* On Text Simplification Metrics and General-Purpose LLMs for Accessible Health Information, and A Potential Architectural
+*Title:* A Correlation-Driven Analysis Reveals a Potential Advantage of Instruction-Tuned LLM for Text Simplification
 
 ```bibtex
 @article{githinji2025textsimplificationmetricsgeneralpurpose,
