@@ -102,9 +102,17 @@ We set a metric as an independent variable and then ran a regression model on th
 ## Additional plots
 
 <p align="center">
+  <img src="self-reported-rationale-deck.jpg" alt="self-reported LLM rationale" width="720">
+  <br>
+  <em>Figure 3: LLM self-reported rationale for text simplification changes made</em>
+</p>
+
+
+
+<p align="center">
   <img src="08b-correlo-readability.png" alt="Correlogram for readability metrics" width="720">
   <br>
-  <em>Figure 3: Correlation pair plots for readability formulas</em>
+  <em>Figure 4: Correlation pair plots for readability formulas</em>
 </p>
 
 
@@ -112,11 +120,11 @@ We set a metric as an independent variable and then ran a regression model on th
 <p align="center">
   <img src="08b-correlo-accuracy.png" alt="Correlogram for accuracy metrics" width="720">
   <br>
-  <em>Figure 4: Correlation pair plots for accuracy metrics</em>
+  <em>Figure 5: Correlation pair plots for accuracy metrics</em>
 </p>
 
 <p align="center">
   <img src="08b-correlo-distribz.png" alt="Correlogram for foundational metrics" width="720">
   <br>
-  <em>Figure 5: Correlation pair plots for other metrics</em>
+  <em>Figure 6: Correlation pair plots for other metrics</em>
 </p>
