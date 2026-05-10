@@ -14,6 +14,14 @@
 
 
 ## Metrics in the analysis 
+
+<p align="center">
+  <img src="metrics.jpg" alt="Metrics in the evaluation" width="720">
+  <br>
+  <em>Figure 1: Metrics in the evaluation</em>
+</p>
+
+
 | Metric     |                                | Computation notes                                                                                                                              |
 |-------------------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | n words                                  |                                | $\mathbf{W}$                                                                                                                                   |

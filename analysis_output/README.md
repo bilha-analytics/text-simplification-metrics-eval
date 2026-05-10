@@ -38,6 +38,7 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
 | reg_pca.csv                    | OLS regression results                  |               12 | Model, Metric Name, Adj. R-squared:, R-squared:, F-statistic:, No. Observations:                                                                 |
  
 
+---
 
 **Table 2: SARI Scores**
 | Model Name       |   mean |   se | ci (.95)      |   $n$ Documents |
@@ -48,6 +49,7 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
 | QWen - strict    |  37.84 | 0.35 | 37.16 - 38.52 |           443 |
 
 
+---
 
 **Table 3: Number of samples used in the analysis**
 | Dataset                  | Simplification Model   | $n$ Documents   |   Task Completion Rate | $n$ Evaluations   |
@@ -69,14 +71,40 @@ Conversely, QWen exhibits sensitivity to temperature settings.
 All in all, reasonable sample sizes are obtained for subsequent interrogation.
 
 
- 
+ ---
+
+**Regression by PCA analysis** 
+We set a metric as an independent variable and then ran a regression model on the first four PCA components of the other metrics.
+
+```latex
+\begin{align*} 	 
+  y = & \mathbf{PCA}(\mathrm{StandardScaler} ( X ) ) \\
+  \\
+  \mathrm{metrics} \in \big\{ &\mathrm{BERTScore}, \\
+  & \mathrm{Dale Chall}, \\
+  & \mathrm{Flesch Ease}, \\
+  & \mathrm{avg\_words\_per\_sent}, \\
+  & \mathrm{vocab\_match}, \\
+  & \mathrm{difficult\_words} \big\}
+\label{eq:pca} 
+\end{align*}
+```
+
+<p align="center">
+  <img src="05a-reg-by-pca--adj-r2.png" alt="Regression results" width="720">
+  <br>
+  <em>Figure 2: Regression by PCA results</em>
+</p>
+
+
+---
 
 ## Additional plots
 
 <p align="center">
   <img src="08b-correlo-readability.png" alt="Correlogram for readability metrics" width="720">
   <br>
-  <em>Figure 2: Correlation pair plots for readability formulas</em>
+  <em>Figure 3: Correlation pair plots for readability formulas</em>
 </p>
 
 
@@ -84,11 +112,11 @@ All in all, reasonable sample sizes are obtained for subsequent interrogation.
 <p align="center">
   <img src="08b-correlo-accuracy.png" alt="Correlogram for accuracy metrics" width="720">
   <br>
-  <em>Figure 3: Correlation pair plots for accuracy metrics</em>
+  <em>Figure 4: Correlation pair plots for accuracy metrics</em>
 </p>
 
 <p align="center">
   <img src="08b-correlo-distribz.png" alt="Correlogram for foundational metrics" width="720">
   <br>
-  <em>Figure 4: Correlation pair plots for other metrics</em>
+  <em>Figure 5: Correlation pair plots for other metrics</em>
 </p>
