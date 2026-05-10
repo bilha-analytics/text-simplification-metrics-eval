@@ -1,5 +1,5 @@
 ---
-title: 'On Text Simplification Metrics and General-purpose LLMs for Accessible Health Information, and A Potential Architectural Advantage of The Instruction-tuned LLM Class'
+title: 'An Architectural Advantage of The Instruction-Tuned LLM in Containing The Readability-Accuracy Tension in Text Simplification'
 tags: 
     - NLP 
     - Text simplification
@@ -9,7 +9,7 @@ date: Nov 2025
 ---
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2511.05080-b31b1b.svg)](https://arxiv.org/abs/2511.05080)
+[![arXiv](https://img.shields.io/badge/arXiv-2511.05080-b31b1b.svg)](https://arxiv.org/abs/2511.05080v2)
 ![Custom Badge](https://img.shields.io/badge/Text-Simplification-blue)
 ![Research](https://img.shields.io/badge/Research-NLP-orange)
 ![LLM](https://img.shields.io/badge/LLMs-green)
@@ -26,23 +26,6 @@ date: Nov 2025
 
 
 
-**[Publication associated with this entry](https://arxiv.org/abs/2511.05080)**
-
-*Title:* On Text Simplification Metrics and General-Purpose LLMs for Accessible Health Information, and A Potential Architectural 
-
-*How to cite:*
-
-```bibtex
-@article{githinji2025textsimplificationmetricsgeneralpurpose,
-      title={On Text Simplification Metrics and General-Purpose LLMs for Accessible Health Information, and A Potential Architectural Advantage of The Instruction-Tuned LLM class}, 
-      author={P. Bilha Githinji and Aikaterini Meilliou and Peiwu Qin},
-      year={2025},
-      eprint={2511.05080},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2511.05080}, 
-}
-```
 # Records
 This GitHub repository hosts the analytical outputs from our study. Table 1 below lists the collection of CSV files. These data files support the findings discussed in our research and provide resources for reference. 
 
@@ -55,6 +38,7 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
 | reg_pca.csv                    | OLS regression results                  |               12 | Model, Metric Name, Adj. R-squared:, R-squared:, F-statistic:, No. Observations:                                                                 |
  
 
+---
 
 **Table 2: SARI Scores**
 | Model Name       |   mean |   se | ci (.95)      |   $n$ Documents |
@@ -65,6 +49,7 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
 | QWen - strict    |  37.84 | 0.35 | 37.16 - 38.52 |           443 |
 
 
+---
 
 **Table 3: Number of samples used in the analysis**
 | Dataset                  | Simplification Model   | $n$ Documents   |   Task Completion Rate | $n$ Evaluations   |
@@ -80,42 +65,46 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
 | Custom set               | QWen - strict          | 2,453         |                   0.65 | 59,340          |
 
 
- 
+A successful completion involves the transformation and return of a correctly formatted response for subsequent evaluation.
+The instruction-tuned Mistral model maintains stable operational performance irrespective of the temperature configuration, attaining a completion rate of $85\%$ for the custom dataset.
+Conversely, QWen exhibits sensitivity to temperature settings. 
+All in all, reasonable sample sizes are obtained for subsequent interrogation.
 
-## Metrics in the analysis 
-| Metric     |                                | Computation notes                                                                                                                              |
-|-------------------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| n words                                  |                                | $\mathbf{W}$                                                                                                                                   |
-| n sentences                              |                                | $\mathbf{S}$                                                                                                                                   |
-| n syllables in word                    |                                | $\mathbf{P}$  ;   Typically polysyllabic if $\mathbf{P}\ge 3$                                                                                 |
-| avg words per sent                     |                                | $\mathbf{L} = \frac{ \mathbf{W} }{ \mathbf{S} }$                                                                                               |
-| difficult words                          |                                | $\mathbf{V} = \frac{ \sum \mathbb{I}( ( w \notin \mathrm{DaleChallList}) |  (\mathbf{P} \ge 3))  }{ \mathbf{W} }  * 100$                     |
-| sentences comp ratio                    | Compression or expansion ratio | $\frac{\mathbf{S} {\mathrm{simplified}}}{\mathbf{S} {\mathrm{source}}}$                                                                        |
-| words comp ratio                        | Compression or expansion ratio | $\frac{\mathbf{W} {\mathrm{simplified}}}{\mathbf{W} {\mathrm{source}}}$                                                                        |
-| vocab match                              | Terms (lemmatized)             | $\mathrm{Jaccard} ( \mathbf{T} {\mathrm{simplified}} ,   \mathbf{T} {\mathrm{source}} )$                                                       |
-| Toxicity                                  | Content safety                 | Roberta-hate-speech-dynabench-r4                                                                                                               |
-|**2. Discourse fidelity/Accuracy**|  | | 
-| Semantic Similarity                       | QWen2.5 32B Embeddings         | $\cos ( \mathbf{Doc} {\mathrm{simplified}}, \mathbf{Doc} {\mathrm{source}} )$                                                                  |
-| BERTScore~\cite{zhangbertscore2020}       | N-gram-based                   | F1 score value. (Roberta Large)                                                                                                                |
-| ROUGE-L~\cite{linrouge2004}               | N-gram-based                   | Longest common subsequence. With stemming.                                                                                                     |
-| SacreBLEU~\cite{postcall2018}             | N-gram-based                   | Defaults                                                                                                                                       |
-| LDATopics                                 | Terms                          | $\mathrm{Jaccard} ( \mathbf{T} {\mathrm{simplified}} ,   \mathbf{T} {\mathrm{source}} )$                                                       |
-|**3. Simplification and readability**| | | 
-| SARI~\cite{xuoptimizing2016}              | System goodness, n-gram based  | $\frac{ \mathbf{F1} {add}  + \mathbf{F1} {keep} + \mathbf{Pr} {del} } { 3 }$ ;  $\mathbf{F1}$ score, $\mathbf{Pr}$ecision score               |
-| SMOG~\cite{smog}                          | USA School Grade               | $1.0430  *   \sqrt{  (\sum {w} \mathbb{I}(\mathbf{P} \ge 3)  * \frac{30}{\mathbf{S}}   }  )  + 3.1291$                                       |
-| Gunning Fog~\cite{gunningtechniquenodate} | USA School Grade               | $0.4 * (  \mathbf{V}   +    \mathbf{L}  )$                                                                                                     |
-| ARI~\cite{smithautomated1967}             | USA School Grade               | $(4.71 * \frac{\mathrm{nCharacters}}{\mathbf{W}}) +  (0.5 * \mathbf{L})  - 21.43$                                                             |
-| Dale-Chall                                | USA School Grade               | $(0.1579 * \frac{  \sum \mathbb{I}( w \notin \mathrm{DaleChallList})    }{\mathbf{W}} * 100)   +  (0.0496 * \mathbf{L})  \space [+ 3.6365 ]$ |
-| FKGL~\cite{kincaidelectronic1988}         | USA School Grade               | $-15.59  +  (11.8 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}})    + (0.39 *  \mathbf{L})$                                                     |
-| Flesch Ease~\cite{klareautomation1969}    |                                | $206.835 - (84.6 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}} )   - (1.015 *  \mathbf{L} )$                                                     |
 
+ ---
+
+**Regression by PCA analysis** 
+We set a metric as an independent variable and then ran a regression model on the first four PCA components of the other metrics.
+
+```latex
+\begin{align*} 	 
+  y = & \mathbf{PCA}(\mathrm{StandardScaler} ( X ) ) \\
+  \\
+  \mathrm{metrics} \in \big\{ &\mathrm{BERTScore}, \\
+  & \mathrm{Dale Chall}, \\
+  & \mathrm{Flesch Ease}, \\
+  & \mathrm{avg\_words\_per\_sent}, \\
+  & \mathrm{vocab\_match}, \\
+  & \mathrm{difficult\_words} \big\}
+\label{eq:pca} 
+\end{align*}
+```
+
+<p align="center">
+  <img src="05a-reg-by-pca--adj-r2.png" alt="Regression results" width="720">
+  <br>
+  <em>Figure 2: Regression by PCA results</em>
+</p>
+
+
+---
 
 ## Additional plots
 
 <p align="center">
   <img src="08b-correlo-readability.png" alt="Correlogram for readability metrics" width="720">
   <br>
-  <em>Figure 2: Correlation pair plots for readability formulas</em>
+  <em>Figure 3: Correlation pair plots for readability formulas</em>
 </p>
 
 
@@ -123,11 +112,11 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
 <p align="center">
   <img src="08b-correlo-accuracy.png" alt="Correlogram for accuracy metrics" width="720">
   <br>
-  <em>Figure 3: Correlation pair plots for accuracy metrics</em>
+  <em>Figure 4: Correlation pair plots for accuracy metrics</em>
 </p>
 
 <p align="center">
   <img src="08b-correlo-distribz.png" alt="Correlogram for foundational metrics" width="720">
   <br>
-  <em>Figure 4: Correlation pair plots for other metrics</em>
+  <em>Figure 5: Correlation pair plots for other metrics</em>
 </p>
