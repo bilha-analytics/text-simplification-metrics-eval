@@ -26,23 +26,6 @@ date: Nov 2025
 
 
 
-**[Publication associated with this entry](https://arxiv.org/abs/2511.05080)**
-
-*Title:* An Architectural Advantage of The Instruction-Tuned LLM in Containing The Readability-Accuracy Tension in Text Simplification
-
-*How to cite:*
-
-```bibtex
-@article{githinji2025textsimplificationmetricsgeneralpurpose,
-      title={An Architectural Advantage of The Instruction-Tuned LLM in Containing The Readability-Accuracy Tension in Text Simplification}, 
-      author={P. Bilha Githinji and Aikaterini Meilliou and Zeming Liang and Lian Zhang and Peiwu Qin},
-      year={2025},
-      eprint={2511.05080},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2511.05080v2}, 
-}
-```
 # Records
 This GitHub repository hosts the analytical outputs from our study. Table 1 below lists the collection of CSV files. These data files support the findings discussed in our research and provide resources for reference. 
 
@@ -80,35 +63,13 @@ This GitHub repository hosts the analytical outputs from our study. Table 1 belo
 | Custom set               | QWen - strict          | 2,453         |                   0.65 | 59,340          |
 
 
+A successful completion involves the transformation and return of a correctly formatted response for subsequent evaluation.
+The instruction-tuned Mistral model maintains stable operational performance irrespective of the temperature configuration, attaining a completion rate of $85\%$ for the custom dataset.
+Conversely, QWen exhibits sensitivity to temperature settings. 
+All in all, reasonable sample sizes are obtained for subsequent interrogation.
+
+
  
-
-## Metrics in the analysis 
-| Metric     |                                | Computation notes                                                                                                                              |
-|-------------------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| n words                                  |                                | $\mathbf{W}$                                                                                                                                   |
-| n sentences                              |                                | $\mathbf{S}$                                                                                                                                   |
-| n syllables in word                    |                                | $\mathbf{P}$  ;   Typically polysyllabic if $\mathbf{P}\ge 3$                                                                                 |
-| avg words per sent                     |                                | $\mathbf{L} = \frac{ \mathbf{W} }{ \mathbf{S} }$                                                                                               |
-| difficult words                          |                                | $\mathbf{V} = \frac{ \sum \mathbb{I}( ( w \notin \mathrm{DaleChallList}) |  (\mathbf{P} \ge 3))  }{ \mathbf{W} }  * 100$                     |
-| sentences comp ratio                    | Compression or expansion ratio | $\frac{\mathbf{S} {\mathrm{simplified}}}{\mathbf{S} {\mathrm{source}}}$                                                                        |
-| words comp ratio                        | Compression or expansion ratio | $\frac{\mathbf{W} {\mathrm{simplified}}}{\mathbf{W} {\mathrm{source}}}$                                                                        |
-| vocab match                              | Terms (lemmatized)             | $\mathrm{Jaccard} ( \mathbf{T} {\mathrm{simplified}} ,   \mathbf{T} {\mathrm{source}} )$                                                       |
-| Toxicity                                  | Content safety                 | Roberta-hate-speech-dynabench-r4                                                                                                               |
-|**2. Discourse fidelity/Accuracy**|  | | 
-| Semantic Similarity                       | QWen2.5 32B Embeddings         | $\cos ( \mathbf{Doc} {\mathrm{simplified}}, \mathbf{Doc} {\mathrm{source}} )$                                                                  |
-| BERTScore~\cite{zhangbertscore2020}       | N-gram-based                   | F1 score value. (Roberta Large)                                                                                                                |
-| ROUGE-L~\cite{linrouge2004}               | N-gram-based                   | Longest common subsequence. With stemming.                                                                                                     |
-| SacreBLEU~\cite{postcall2018}             | N-gram-based                   | Defaults                                                                                                                                       |
-| LDATopics                                 | Terms                          | $\mathrm{Jaccard} ( \mathbf{T} {\mathrm{simplified}} ,   \mathbf{T} {\mathrm{source}} )$                                                       |
-|**3. Simplification and readability**| | | 
-| SARI~\cite{xuoptimizing2016}              | System goodness, n-gram based  | $\frac{ \mathbf{F1} {add}  + \mathbf{F1} {keep} + \mathbf{Pr} {del} } { 3 }$ ;  $\mathbf{F1}$ score, $\mathbf{Pr}$ecision score               |
-| SMOG~\cite{smog}                          | USA School Grade               | $1.0430  *   \sqrt{  (\sum {w} \mathbb{I}(\mathbf{P} \ge 3)  * \frac{30}{\mathbf{S}}   }  )  + 3.1291$                                       |
-| Gunning Fog~\cite{gunningtechniquenodate} | USA School Grade               | $0.4 * (  \mathbf{V}   +    \mathbf{L}  )$                                                                                                     |
-| ARI~\cite{smithautomated1967}             | USA School Grade               | $(4.71 * \frac{\mathrm{nCharacters}}{\mathbf{W}}) +  (0.5 * \mathbf{L})  - 21.43$                                                             |
-| Dale-Chall                                | USA School Grade               | $(0.1579 * \frac{  \sum \mathbb{I}( w \notin \mathrm{DaleChallList})    }{\mathbf{W}} * 100)   +  (0.0496 * \mathbf{L})  \space [+ 3.6365 ]$ |
-| FKGL~\cite{kincaidelectronic1988}         | USA School Grade               | $-15.59  +  (11.8 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}})    + (0.39 *  \mathbf{L})$                                                     |
-| Flesch Ease~\cite{klareautomation1969}    |                                | $206.835 - (84.6 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}} )   - (1.015 *  \mathbf{L} )$                                                     |
-
 
 ## Additional plots
 
