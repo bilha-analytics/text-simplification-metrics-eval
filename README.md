@@ -57,7 +57,7 @@ Implementations are based on $evaluate$ \cite{noauthor_huggingface/evaluate_2025
 <p align="center">
   <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41597-022-01920-3/MediaObjects/41597_2022_1920_Fig2_HTML.png" alt="Example text simplification guidelines for annotators in benchmarking dataset" width="720">
   <br>
-  <em>Figure 2: Example text simplification guidelines for annotators in benchmarking dataset</em>
+  <em>Figure 2: Example text simplification guidelines for annotators in benchmarking dataset (source: Kush Attal, et. al.)</em>
 </p>
 
 
