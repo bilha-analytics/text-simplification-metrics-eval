@@ -6,7 +6,8 @@
 # Summary
 
 
-## Pages
+## Pages (detailed results)
+
 - **[Analysis Output: Readability and accuracy metrics, Instruction-tuned Mistral-small 24B Vs Reasoning-augmented QWen2.5 32B](https://github.com/bilha-analytics/text-simplification-metrics-eval/tree/main/analysis_output)**
 
 
@@ -21,7 +22,7 @@
   <em>Figure 1: Metrics in the evaluation</em>
 </p>
 
-
+<!--
 | Metric     |                                | Computation notes                                                                                                                              |
 |-------------------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | n words                                  |                                | $\mathbf{W}$                                                                                                                                   |
@@ -47,10 +48,17 @@
 | Dale-Chall                                | USA School Grade               | $(0.1579 * \frac{  \sum \mathbb{I}( w \notin \mathrm{DaleChallList})    }{\mathbf{W}} * 100)   +  (0.0496 * \mathbf{L})  \space [+ 3.6365 ]$ |
 | FKGL~\cite{kincaidelectronic1988}         | USA School Grade               | $-15.59  +  (11.8 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}})    + (0.39 *  \mathbf{L})$                                                     |
 | Flesch Ease~\cite{klareautomation1969}    |                                | $206.835 - (84.6 * \frac{\sum {w}(\mathbf{P})}{\mathbf{W}} )   - (1.015 *  \mathbf{L} )$                                                     |
+-->
 
 Traditional lexical alignment metrics like ROUGE and SacreBLEU, while not ideal for text simplification due to their reliance on lexical retention, serve as foundational measures for internal consistency and cross-study comparability.
-Implementations are based on $evaluate$~\cite{noauthor_huggingface/evaluate_2025} and $textstats$~\cite{noauthor_textstat/textstat_2025} Python modules.
+Implementations are based on $evaluate$ \cite{noauthor_huggingface/evaluate_2025} and $textstats$ \cite{noauthor_textstat/textstat_2025} Python modules.
 
+## Examples of text simplification
+<p align="center">
+  <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41597-022-01920-3/MediaObjects/41597_2022_1920_Fig2_HTML.png" alt="Example text simplification guidelines for annotators in benchmarking dataset" width="720">
+  <br>
+  <em>Figure 2: Example text simplification guidelines for annotators in benchmarking dataset (source: Kush Attal, et. al.)</em>
+</p>
 
 
 ## Prompt Design
