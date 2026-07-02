@@ -53,7 +53,7 @@
 Traditional lexical alignment metrics like ROUGE and SacreBLEU, while not ideal for text simplification due to their reliance on lexical retention, serve as foundational measures for internal consistency and cross-study comparability.
 Implementations are based on $evaluate$ \cite{noauthor_huggingface/evaluate_2025} and $textstats$ \cite{noauthor_textstat/textstat_2025} Python modules.
 
-## Example of text simplification
+## Examples of text simplification
 <p align="center">
   <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41597-022-01920-3/MediaObjects/41597_2022_1920_Fig2_HTML.png" alt="Example text simplification guidelines for annotators in benchmarking dataset" width="720">
   <br>
