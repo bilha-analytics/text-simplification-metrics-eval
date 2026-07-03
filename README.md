@@ -61,6 +61,11 @@ Implementations are based on $evaluate$ \cite{noauthor_huggingface/evaluate_2025
 </p>
 
 
+<!-- TODO: fill out table -->
+|Text simplification tactic | Source document | Human annotators | Mistral | Qwen |
+|---|---|---|---|---|
+| | | | | |
+
 ## Prompt Design
 
 #### LLM prompt for text simplification
